@@ -1,0 +1,55 @@
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #f5c277;
+  color: #3a3d3f;
+  text-align: left;
+  margin: 0 0;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.project {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #f5c277;
+  color: #3a3d3f;
+  text-align: center;
+  margin: 0 0;
+  padding: 10px;
+}
