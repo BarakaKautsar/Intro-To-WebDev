@@ -14,6 +14,7 @@ header {
 }
 
 .container {
+  background-color: #3a3d3f;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
