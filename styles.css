@@ -2,7 +2,6 @@ body {
   font-family: "Montserrat";
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
 }
 
 header {
@@ -14,10 +13,10 @@ header {
 }
 
 .container {
-  background-color: #3a3d3f;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #3a3d3f;
 }
 .grid {
   display: grid;
@@ -35,6 +34,7 @@ h1 {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .project-title {
@@ -44,7 +44,6 @@ h1 {
 
 .project-thumbnail {
   width: 100%;
-  height: auto;
 }
 
 footer {
@@ -53,4 +52,24 @@ footer {
   text-align: center;
   margin: 0 0;
   padding: 10px;
+}
+
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+  /* height: 50vh; */
+  justify-self: center;
+  background-color: white;
+}
+
+/* .hero > img {
+  width: 100%;
+  position: absolute;
+  top: -50vh;
+  right: -90;
+} */
+
+main {
+  background-color: #3a3d3f;
+  margin: 0 0;
 }
