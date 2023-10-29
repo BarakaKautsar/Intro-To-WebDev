@@ -1,0 +1,153 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-color: #3a3d3f;
+}
+
+.hero {
+  background: url(images/giphy.gif) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 10rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h2 {
+  margin: 20px 0;
+}
+
+.slider-container {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.slider-container h2 {
+  text-align: center;
+}
+
+.slider-track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  padding: 0%;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  background-color: #fff;
+  color: #3a3d3f;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide h2 {
+  margin: 0 10%;
+}
+
+.slide p {
+  margin: 0 10%;
+  padding: 10px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.slider-button--left {
+  left: -40px;
+}
+
+.slider-button--right {
+  right: -40px;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.slide-indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgb(255, 255, 255, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slide-indicator--active {
+  background: #fff;
+}
+
+.is-hidden {
+  display: none;
+}
+
+header {
+  background-color: #f5c277;
+  color: #3a3d3f;
+  text-align: left;
+  margin: 0 0;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #f5c277;
+  display: flex;
+  color: #3a3d3f;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center;
+}
+
+footer > a {
+  margin: 0 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #19160a;
+}
