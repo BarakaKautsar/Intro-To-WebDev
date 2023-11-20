@@ -1,0 +1,47 @@
+body {
+  margin: 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hidden-message {
+  font-size: 24px;
+  color: black;
+}
+
+#message-container {
+  margin: 0;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 200px;
+}
+
+img {
+  width: 800px;
+  height: 100%;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message > p {
+  font-size: 20px;
+  color: black;
+  width: 600px;
+}
+
+.message--hidden {
+  display: none;
+}
