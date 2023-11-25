@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+p {
+  white-space: pre-line;
+}
+
+#photo-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#description {
+  max-width: 600px;
+  margin: 0 auto;
+}
