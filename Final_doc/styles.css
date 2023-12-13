@@ -1,0 +1,24 @@
+/* Add your CSS styles here */
+
+body {
+  font-family: "IBM Plex Mono";
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}

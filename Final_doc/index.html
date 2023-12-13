@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BACK2BANDUNG Site Documentation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BACK2BANDUNG Site Documentation</h1>
+      <p>
+        Visit the
+        <a href="web-dev-final-project-49g3-barakakautsars-projects.vercel.app"
+          >BACK2BANDUNG Site</a
+        >.
+      </p>
+    </header>
+    <main>
+      <p>
+        This website was developed as a final project for the NYU IDM Intro to
+        Web Development course. This website is meant to be used as a catalog
+        for the things I’m going to sell because I’m moving back to Indonesia in
+        January of 2024. Here, the user can view all the things I’m selling
+        including the photos, descriptions, and price. The user can use the cart
+        functionality to order multiple items at once after signing up to the
+        website using their email address. However, the website does not
+        currently handle transactions and therefore the user is directed to
+        contact me directly, either through email; text; or social media, in
+        order to make a purchase.
+      </p>
+      <img src="assets/GIF2.gif" alt="Main Page" />
+      <h2>Tools & Resources:</h2>
+      <p>
+        To build the backend of this project I used Firebase. Which is a backend
+        as a service (BaaS) product by google. With firebase, I was able to
+        handle authentication in order to sign up and sign in and store the data
+        for my user and products using firestore which is a cloud NoSQL database
+        service built into firebase. I used the series of videos by
+        <a
+          href="https://www.youtube.com/watch?v=9zdvmgGsww0&list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb"
+          >Net Ninja</a
+        >
+        on youtube on getting started with Firebase 9 in order to help me
+        develop the backend for my website.
+      </p>
+      <p>
+        To deploy my website I used Vercel which is a cloud platform that
+        simplifies the deployment and hosting of web applications. Vercel also
+        includes continuous deployment from a git repository so every time I do
+        a git push, Vercel will automatically deploy the newest version of my
+        website. I was able to deploy this thanks to the help of my very good
+        friend Bach Le.
+      </p>
+      <section id="website-pages">
+        <h2>Website Pages:</h2>
+        <h3>Main Page:</h3>
+        <p>
+          The main page is the first page that the user will see when they visit
+          the website. The main page will display the items that are currently
+          available for sale. The user can click on the item to see more
+          details.
+        </p>
+        <img src="assets/BACK2BANDUNG - main.jpg" alt="Main Page" />
+
+        <h3>Product Modal</h3>
+        <p>
+          When a user clicks on the product card, a modal will appear displaying
+          more information about the product buttons to add to cart and place
+          order. The user doesn't have to sign in in order to place and order
+          for a single product, however, if they want to add to cart, they will
+          need to sign up first.
+        </p>
+        <img src="assets/BACK2BANDUNG - modal.jpg" alt="Product Modal" />
+
+        <h3>Authentication Pages</h3>
+        <p>
+          If the user clicks on the account button on the upper right corner of
+          the page and the user is not signed in, it will direct them to a page
+          where they can sign up or log in. The user will be able to sign up
+          using their email and password.
+        </p>
+        <img src="assets/BACK2BANDUNG - landing page.jpg" alt="Sign In Page" />
+        <img src="assets/BACK2BANDUNG - Sign Up.jpg" alt="Sign Up Page" />
+        <img src="assets/BACK2BANDUNG - Login.jpg" alt="Sign In Page" />
+
+        <h3>User Info page</h3>
+        <p>
+          If the user clicks on the account button and they are already signed
+          in, they will be directed to the user information page where they can
+          see their email address and user ID. Here, the user can also log out
+          of their account.
+        </p>
+        <img src="assets/BACK2BANDUNG - User.jpg" alt="User Info Page" />
+
+        <h3>Cart Page</h3>
+        <p>
+          If the user clicks on the cart button on the upper right corner of the
+          page, they will be directed to the cart page where they can see the
+          items that they have added to their cart. Here, the user can also
+          remove items from their cart and place an order. The user will need ot
+          log in in order to use this functionality.
+        </p>
+        <img src="assets/BACK2BANDUNG - Cart.jpg" alt="Cart Page" />
+
+        <h3>Order Page</h3>
+        <p>
+          In the order page, the user will be able to see the products they want
+          to order along with the total price for each item. If the user access
+          this page through their cart, all of the items in the cart will be
+          included. However if the user access this from the product modal, then
+          only that product will be included in this page. The page also
+          includes 3 buttons that will redirect the user to their preferred
+          method of contacting me to place an order.
+        </p>
+
+        <img src="assets/BACK2BANDUNG - Order.jpg" alt="Order Page" />
+
+        <h3>FAQ Page</h3>
+        <p>
+          The FAQ page includes some questions that the user may have about the
+          site and about me. This page also includes links to contact me if the
+          user has more questions to ask. The contact information is also
+          included in the footer that is accessible throughout the site.
+        </p>
+        <img src="assets/BACK2BANDUNG - FAQ.jpg" alt="FAQ Page" />
+
+        <h2>Javascript Files:</h2>
+        <ul>
+          <p>
+            1. Firebase-config.js: Firebase configuration settings for the web
+            app.
+          </p>
+          <p>
+            2. Firestore.js: Manages CRUD operations for user and product data
+            in Firestore.
+          </p>
+          <p>
+            3. Auth.js: Handles user authentication functions (sign up, log in,
+            log out).
+          </p>
+          <p>4. Products.js: Controls functionality on the main index page.</p>
+          <p>5. Cart.js: Manages functionality for the user cart page.</p>
+          <p>
+            6. Order.js: Handles the functionality for the order page, fetching
+            and displaying product details.
+          </p>
+        </ul>
+
+        <h2>things to do & improvements to be made:</h2>
+        <ul>
+          <li>
+            Make sure the website is usable (and looks nice) on mobile devices
+          </li>
+          <li>Add more items to sell</li>
+          <li>Have multiple images on each item</li>
+          <li>Have a functionality to display already sold items</li>
+          <li>
+            Give the user the ability to change their user information & delete
+            their account
+          </li>
+          <li>
+            Have an admin page to manage the data so that I don’t have to change
+            it directly through the firebase console.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
